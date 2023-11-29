@@ -2,7 +2,7 @@
 using Microsoft.JSInterop;
 using RapidBlazor.WebUI.Shared.TodoLists;
 
-namespace RapidBlazor.WebUI.Client.Pages.Todo;
+namespace RapidBlazor.WebUI.Client.Old.Pages.Todo;
 
 public partial class TodoState
 {

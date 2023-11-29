@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 
-namespace RapidBlazor.WebUI.Client.Shared;
+namespace RapidBlazor.WebUI.Client.Old.Shared;
 
 public class CustomValidation : ComponentBase
 {

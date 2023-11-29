@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using RapidBlazor.WebUI.Shared.Authorization;
 
-namespace RapidBlazor.WebUI.Client.Shared;
+namespace RapidBlazor.WebUI.Client.Old.Shared;
 
 public class FlexibleAuthorizeView : Microsoft.AspNetCore.Components.Authorization.AuthorizeView
 {

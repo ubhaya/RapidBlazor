@@ -2,7 +2,7 @@
 using RapidBlazor.WebUI.Shared.AccessControl;
 using RapidBlazor.WebUI.Shared.Authorization;
 
-namespace RapidBlazor.WebUI.Client.Pages.Admin.Roles;
+namespace RapidBlazor.WebUI.Client.Old.Pages.Admin.Roles;
 
 public partial class Index
 {
