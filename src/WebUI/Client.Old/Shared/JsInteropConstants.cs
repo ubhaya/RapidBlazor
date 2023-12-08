@@ -1,4 +1,4 @@
-﻿namespace RapidBlazor.WebUI.Client.Shared;
+﻿namespace RapidBlazor.WebUI.Client.Old.Shared;
 
 public static class JsInteropConstants
 {
