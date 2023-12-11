@@ -1,5 +1,3 @@
-using System.Security.Claims;
-using System.Text.Json;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Http.Extensions;
@@ -9,8 +7,10 @@ using Microsoft.Extensions.Primitives;
 using RapidBlazor.WebUi.Components.Account.Pages;
 using RapidBlazor.WebUi.Components.Account.Pages.Manage;
 using RapidBlazor.WebUi.Data;
+using System.Security.Claims;
+using System.Text.Json;
 
-namespace Microsoft.AspNetCore.Routing;
+namespace RapidBlazor.WebUi.Components.Account;
 
 internal static class IdentityComponentsEndpointRouteBuilderExtensions
 {

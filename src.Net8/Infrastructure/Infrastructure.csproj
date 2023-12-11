@@ -4,8 +4,8 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <AssemblyName>RapidBlazor.WebUi.Infrastructure</AssemblyName>
-        <RootNamespace>RapidBlazor.WebUi.Infrastructure</RootNamespace>
+        <AssemblyName>RapidBlazor.Infrastructure</AssemblyName>
+        <RootNamespace>RapidBlazor.Infrastructure</RootNamespace>
     </PropertyGroup>
 
 </Project>
