@@ -4,7 +4,7 @@ using RapidBlazor.Application.Common.Services.Identity;
 
 namespace RapidBlazor.Application.Common.Behaviours;
 
-public class LoggingBehaviour<TRequest>
+public sealed class LoggingBehaviour<TRequest>
     : IRequestPreProcessor<TRequest> where TRequest : notnull
 {
     private readonly ILogger _logger;

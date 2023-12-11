@@ -10,6 +10,8 @@
 
     <ItemGroup>
       <PackageReference Include="FluentValidation" Version="11.8.1" />
+      <PackageReference Include="NetEscapades.EnumGenerators" Version="1.0.0-beta08"
+                        PrivateAssets="all" ExcludeAssets="runtime" />
     </ItemGroup>
 
 </Project>
