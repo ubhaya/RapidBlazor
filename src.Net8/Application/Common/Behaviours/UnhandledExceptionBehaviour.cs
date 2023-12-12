@@ -20,7 +20,7 @@ public sealed class UnhandledExceptionBehaviour<TRequest, TResponse>
     {
         try
         {
-            throw new NotImplementedException();
+            return await next();
         }
         catch (Exception ex)
         {

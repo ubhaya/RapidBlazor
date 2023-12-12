@@ -10,7 +10,7 @@ using System.Reflection;
 
 namespace RapidBlazor.Infrastructure.Data;
 
-public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplicationDbContext
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>, IApplicationDbContext
 {
     private readonly IMediator _mediator;
     private readonly AuditableEntitySaveChangesInterceptor _auditableEntitySaveChangesInterceptor;

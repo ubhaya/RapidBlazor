@@ -5,7 +5,9 @@ using RapidBlazor.Infrastructure.Data;
 using RapidBlazor.Infrastructure.Data.Interceptors;
 using RapidBlazor.Infrastructure.Identity;
 using Microsoft.Extensions.Configuration;
+using RapidBlazor.Application.Common.Services.DateTime;
 using RapidBlazor.Application.Common.Services.Identity;
+using RapidBlazor.Infrastructure.DateTime;
 
 // ReSharper disable once CheckNamespace
 namespace Microsoft.Extensions.DependencyInjection;
@@ -29,13 +31,16 @@ public static class ConfigureServices
 
         services.AddIdentityCore<ApplicationUser>(options =>
             {
-                options.SignIn.RequireConfirmedAccount = true;
+                options.SignIn.RequireConfirmedAccount = false;
             })
-            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddRoles<ApplicationRole>()
             .AddSignInManager()
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddClaimsPrincipalFactory<ApplicationUserClaimsPrincipalFactory>()
             .AddDefaultTokenProviders();
 
         services.AddScoped<IIdentityService, IdentityService>();
+        services.AddScoped<IDateTimeProvider, DateTimeProvider>();
 
         return services;
     }

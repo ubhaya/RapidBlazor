@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using RapidBlazor.Infrastructure.Identity;
 using RapidBlazor.WebUi.Client;
+using RapidBlazor.WebUi.Shared.Authorization;
 
 namespace RapidBlazor.WebUi.Components.Account;
 
@@ -88,14 +89,28 @@ internal sealed class PersistingRevalidatingAuthenticationStateProvider : Revali
         {
             var userId = principal.FindFirst(options.ClaimsIdentity.UserIdClaimType)?.Value;
             var email = principal.FindFirst(options.ClaimsIdentity.EmailClaimType)?.Value;
+            var permissions = principal.FindFirst(CustomClaimTypes.Permissions)?.Value;
+            var roles = principal.FindAll(options.ClaimsIdentity.RoleClaimType)?
+                .Select(r => r.Value)
+                .ToList();
 
-            if (userId != null && email != null)
+            if (userId != null && email != null && permissions != null && roles != null)
             {
-                state.PersistAsJson(nameof(UserInfo), new UserInfo
+                try
                 {
-                    UserId = userId,
-                    Email = email,
-                });
+                    state.PersistAsJson(nameof(UserInfo), new UserInfo
+                    {
+                        UserId = userId,
+                        Email = email,
+                        Permissions = permissions,
+                        Roles = roles,
+                    });
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                    throw;
+                }
             }
         }
     }

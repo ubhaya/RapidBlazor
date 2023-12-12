@@ -12,13 +12,13 @@ public class ApplicationDbContextInitializer
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly RoleManager<ApplicationRole> _roleManager;
 
-    private const string AdministratorsRole = "Administrators";
-    private const string AccountsRole = "Accounts";
-    private const string OperationsRole = "Operations";
-    
+    private const string? AdministratorsRole = "Administrators";
+    private const string? AccountsRole = "Accounts";
+    private const string? OperationsRole = "Operations";
+
     private const string DefaultPassword = "Password123!";
 
-    public ApplicationDbContextInitializer(ApplicationDbContext context, 
+    public ApplicationDbContextInitializer(ApplicationDbContext context,
         UserManager<ApplicationUser> userManager,
         RoleManager<ApplicationRole> roleManager)
     {
@@ -37,7 +37,7 @@ public class ApplicationDbContextInitializer
         await SeedIdentityAsync();
         await SeedDataAsync();
     }
-    
+
     private async Task InitialiseWithDropCreateAsync()
     {
         await _context.Database.EnsureDeletedAsync();
@@ -58,25 +58,23 @@ public class ApplicationDbContextInitializer
 
     private async Task SeedIdentityAsync()
     {
-        await Task.WhenAll(
-            CreateRole(AdministratorsRole, Permissions.All),
-            CreateRole(AccountsRole, Permissions.ViewUsers | Permissions.Counter),
-            CreateRole(OperationsRole, Permissions.ViewUsers | Permissions.Forecast));
+        await CreateRole(AdministratorsRole, Permissions.All);
+        await CreateRole(AccountsRole, Permissions.ViewUsers | Permissions.Counter);
+        await CreateRole(OperationsRole, Permissions.ViewUsers | Permissions.Forecast);
 
-        await Task.WhenAll(
-            CreateUser("admin@localhost", AdministratorsRole),
-            CreateUser("auditor@localost"));
+        await CreateUser("admin@localhost", new[] { AdministratorsRole });
+        await CreateUser("auditor@localost", new[] { AccountsRole, OperationsRole });
 
         await _context.SaveChangesAsync();
     }
 
-    private async Task CreateRole(string roleName, Permissions permissions)
+    private async Task CreateRole(string? roleName, Permissions permissions)
     {
         await _roleManager.CreateAsync(
-            new ApplicationRole { Name = roleName, NormalizedName = roleName.ToUpper(), Permissions = permissions });
+            new ApplicationRole { Name = roleName, NormalizedName = roleName?.ToUpper(), Permissions = permissions });
     }
 
-    private async Task CreateUser(string userName, string? role = null)
+    private async Task CreateUser(string userName, IEnumerable<string?>? roles = null)
     {
         var user = new ApplicationUser { UserName = userName, Email = userName };
 
@@ -84,8 +82,12 @@ public class ApplicationDbContextInitializer
 
         user = await _userManager.FindByNameAsync(userName);
 
-        if (!string.IsNullOrEmpty(role))
-            await _userManager.AddToRoleAsync(user!, role);
+        foreach (var role in roles?? Enumerable.Empty<string>())
+        {
+            if (!string.IsNullOrEmpty(role))
+                await _userManager.AddToRoleAsync(user!, role);
+        }
+            
     }
 
     private async Task SeedDataAsync()
@@ -102,7 +104,7 @@ public class ApplicationDbContextInitializer
             {
                 new TodoItem { Title = "Make a todo list 📃" },
                 new TodoItem { Title = "Check off the first item ✅" },
-                new TodoItem { Title = "Realise you've already done two things on the list! 🤯"},
+                new TodoItem { Title = "Realise you've already done two things on the list! 🤯" },
                 new TodoItem { Title = "Reward yourself with a nice, long nap 🏆" },
             }
         };

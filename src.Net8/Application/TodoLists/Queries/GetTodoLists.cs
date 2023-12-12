@@ -5,9 +5,9 @@ using RapidBlazor.WebUi.Shared.TodoLists;
 
 namespace RapidBlazor.Application.TodoLists.Queries;
 
-public sealed record GetTodoListQuery : IRequest<TodosVm>;
+public sealed record GetTodoListsQuery : IRequest<TodosVm>;
 
-public class GetTodoListQueryHandler : IRequestHandler<GetTodoListQuery, TodosVm>
+public class GetTodoListQueryHandler : IRequestHandler<GetTodoListsQuery, TodosVm>
 {
     private readonly IApplicationDbContext _context;
 
@@ -16,7 +16,7 @@ public class GetTodoListQueryHandler : IRequestHandler<GetTodoListQuery, TodosVm
         _context = context;
     }
 
-    public async Task<TodosVm> Handle(GetTodoListQuery request, 
+    public async Task<TodosVm> Handle(GetTodoListsQuery request, 
         CancellationToken cancellationToken)
     {
         return new TodosVm

@@ -1,11 +1,16 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using NSwag;
+using NSwag.Generation.Processors.Security;
+using RapidBlazor.Application.Common.Services.Identity;
 using RapidBlazor.Infrastructure.Data;
 using RapidBlazor.Infrastructure.Identity;
 using RapidBlazor.WebUi.Client.Pages;
 using RapidBlazor.WebUi.Components;
 using RapidBlazor.WebUi.Components.Account;
+using RapidBlazor.WebUi.Services;
+using RapidBlazor.WebUi.Shared.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,10 +19,19 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
 
+builder.Services
+    .AddApplicationService()
+    .AddInfrastructureServices(builder.Configuration);
+
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
 builder.Services.AddScoped<AuthenticationStateProvider, PersistingRevalidatingAuthenticationStateProvider>();
+
+builder.Services.AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationPolicyProvider, FlexibleAuthorizationPolicyProvider>();
 
 builder.Services.AddAuthentication(options =>
     {
@@ -26,23 +40,46 @@ builder.Services.AddAuthentication(options =>
     })
     .AddIdentityCookies();
 
-#region Move to Infrastructure
-
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-
-builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddSignInManager()
-    .AddDefaultTokenProviders();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<ICurrentUser, CurrentUser>();
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
 
-#endregion
+builder.Services.AddControllers();
+
+builder.AddApplicationServerServices();
+
+builder.Services.AddOpenApiDocument(configure =>
+{
+    configure.Title = "CleanArchitecture Api";
+    configure.AddSecurity("JWT", Enumerable.Empty<string>(),
+        new OpenApiSecurityScheme
+        {
+            Type = OpenApiSecuritySchemeType.ApiKey,
+            Name = "Authorization",
+            In = OpenApiSecurityApiKeyLocation.Cookie,
+            Description = "Type into the textbox: Bearer {your JWT token}."
+        });
+    configure.OperationProcessors.Add(
+        new AspNetCoreOperationSecurityScopeProcessor("JWT"));
+});
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    try
+    {
+        var initializer = scope.ServiceProvider.GetRequiredService<ApplicationDbContextInitializer>();
+        await initializer.InitializeAsync();
+        await initializer.SeedAsync();
+    }
+    catch (Exception ex)
+    {
+        var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred during database initialisation.");
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -61,6 +98,19 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
+
+app.UseSwaggerUi(configure =>
+{
+    configure.DocumentPath = "/api/v1/openapi.json";
+});
+
+app.UseReDoc(configure =>
+{
+    configure.Path = "/redoc";
+    configure.DocumentPath = "/api/v1/openapi.json";
+});
+
+app.MapControllers();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()

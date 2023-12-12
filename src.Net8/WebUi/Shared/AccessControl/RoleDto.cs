@@ -20,7 +20,7 @@ public sealed class RoleDto
 
     public string Id { get; }
     
-    public string Name { get; }
+    public string Name { get; set; }
     
     public Permissions Permissions { get; set; }
 
