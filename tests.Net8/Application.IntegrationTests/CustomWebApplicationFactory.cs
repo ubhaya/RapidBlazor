@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RapidBlazor.Application.Common.Services.Identity;
-using RapidBlazor.WebUi.Data;
+using RapidBlazor.Infrastructure.Data;
 
 namespace RapidBlazor.Application.IntegrationTests;
 

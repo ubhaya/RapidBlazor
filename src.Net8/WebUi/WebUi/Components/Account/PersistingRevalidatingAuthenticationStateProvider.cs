@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Components.Server;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
+using RapidBlazor.Infrastructure.Identity;
 using RapidBlazor.WebUi.Client;
-using RapidBlazor.WebUi.Data;
 
 namespace RapidBlazor.WebUi.Components.Account;
 

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
-using RapidBlazor.WebUi.Data;
+using RapidBlazor.Infrastructure.Identity;
 
 namespace RapidBlazor.WebUi.Components.Account;
 

@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Identity;
-using RapidBlazor.WebUi.Data;
+using RapidBlazor.Infrastructure.Identity;
 
 namespace RapidBlazor.WebUi.Components.Account;
 

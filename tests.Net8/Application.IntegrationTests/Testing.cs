@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RapidBlazor.WebUi.Data;
+using RapidBlazor.Infrastructure.Data;
+using RapidBlazor.Infrastructure.Identity;
 using Respawn;
 using Respawn.Graph;
 

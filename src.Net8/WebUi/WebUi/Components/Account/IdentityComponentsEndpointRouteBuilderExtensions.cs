@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
+using RapidBlazor.Infrastructure.Identity;
 using RapidBlazor.WebUi.Components.Account.Pages;
 using RapidBlazor.WebUi.Components.Account.Pages.Manage;
-using RapidBlazor.WebUi.Data;
 using System.Security.Claims;
 using System.Text.Json;
 

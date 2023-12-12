@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using RapidBlazor.Infrastructure.Data;
+using RapidBlazor.Infrastructure.Identity;
 using RapidBlazor.WebUi.Client.Pages;
 using RapidBlazor.WebUi.Components;
 using RapidBlazor.WebUi.Components.Account;
-using RapidBlazor.WebUi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,8 @@ builder.Services.AddAuthentication(options =>
     })
     .AddIdentityCookies();
 
+#region Move to Infrastructure
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(connectionString));
@@ -36,6 +39,8 @@ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.Requ
     .AddDefaultTokenProviders();
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
+
+#endregion
 
 var app = builder.Build();
 
