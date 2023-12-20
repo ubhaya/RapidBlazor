@@ -1,12 +1,12 @@
 using MediatR;
 using RapidBlazor.Application.Users.Commands;
 using RapidBlazor.Application.Users.Queries;
-using RapidBlazor.WebUi.Client.Pages.Admin.Users;
+using RapidBlazor.WebUi.Client.Handlers.Interfaces;
 using RapidBlazor.WebUi.Shared.AccessControl;
 
-namespace RapidBlazor.WebUi.Services;
+namespace RapidBlazor.WebUi.Client.Handlers.ServerImplementation;
 
-public class UserServerHandler : IUserHandler
+internal class UserServerHandler : IUserHandler
 {
     private readonly IMediator _mediator;
 

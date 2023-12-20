@@ -1,8 +1,9 @@
+using RapidBlazor.WebUi.Client.Handlers.Interfaces;
 using RapidBlazor.WebUi.Shared.AccessControl;
 
-namespace RapidBlazor.WebUi.Client.Pages.Admin.Users;
+namespace RapidBlazor.WebUi.Client.Handlers.WasmImplementation;
 
-public class UserApiHandler : IUserHandler
+internal class UserApiHandler : IUserHandler
 {
     private readonly IUsersClient _usersClient;
 

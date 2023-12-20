@@ -1,9 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.JSInterop;
 using RapidBlazor.WebUi.Client;
-using RapidBlazor.WebUi.Client.Pages.Admin.Users;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 

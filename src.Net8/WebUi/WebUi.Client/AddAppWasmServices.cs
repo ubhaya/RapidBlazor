@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using RapidBlazor.WebUi.Client.Handlers.Interfaces;
+using RapidBlazor.WebUi.Client.Handlers.ServerImplementation;
 
-namespace RapidBlazor.WebUi.Client.Pages.Admin.Users;
+namespace RapidBlazor.WebUi.Client;
 
 public static class AppServices
 {
@@ -19,5 +21,14 @@ public static class AppServices
             .WithScopedLifetime());
 
         return builder;
+    }
+    
+    public static IServiceCollection AddApplicationServerServices(this IServiceCollection services)
+    {
+        services.AddScoped<IUserHandler, UserServerHandler>();
+        services.AddScoped<ITodoListHandler, TodoListServerHandler>();
+        services.AddScoped<ITodoItemsHandler, TodoItemsServerHandler>();
+        
+        return services;
     }
 }

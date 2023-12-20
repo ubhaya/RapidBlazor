@@ -1,11 +1,11 @@
 using MediatR;
 using RapidBlazor.Application.TodoItems.Commands;
-using RapidBlazor.WebUi.Client.Pages.Todo;
+using RapidBlazor.WebUi.Client.Handlers.Interfaces;
 using RapidBlazor.WebUi.Shared.TodoItems;
 
-namespace RapidBlazor.WebUi.Services;
+namespace RapidBlazor.WebUi.Client.Handlers.ServerImplementation;
 
-public class TodoItemsServerHandler :ITodoItemsHandler
+internal class TodoItemsServerHandler :ITodoItemsHandler
 {
     private readonly IMediator _mediator;
 

@@ -1,8 +1,9 @@
+using RapidBlazor.WebUi.Client.Handlers.Interfaces;
 using RapidBlazor.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.WebUi.Client.Pages.Todo;
+namespace RapidBlazor.WebUi.Client.Handlers.WasmImplementation;
 
-public class TodoApiHandler:ITodoListHandler
+internal class TodoApiHandler:ITodoListHandler
 {
     private TodoListsClient _todoListsClient;
 

@@ -1,12 +1,12 @@
 using MediatR;
 using RapidBlazor.Application.TodoLists.Commands;
 using RapidBlazor.Application.TodoLists.Queries;
-using RapidBlazor.WebUi.Client.Pages.Todo;
+using RapidBlazor.WebUi.Client.Handlers.Interfaces;
 using RapidBlazor.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.WebUi.Services;
+namespace RapidBlazor.WebUi.Client.Handlers.ServerImplementation;
 
-public class TodoListServerHandler : ITodoListHandler
+internal class TodoListServerHandler : ITodoListHandler
 {
     private IMediator _mediator;
 

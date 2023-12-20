@@ -1,6 +1,6 @@
 using RapidBlazor.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.WebUi.Client.Pages.Todo;
+namespace RapidBlazor.WebUi.Client.Handlers.Interfaces;
 
 public interface ITodoListHandler
 {

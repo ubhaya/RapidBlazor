@@ -1,6 +1,6 @@
 using RapidBlazor.WebUi.Shared.AccessControl;
 
-namespace RapidBlazor.WebUi.Client.Pages.Admin.Users;
+namespace RapidBlazor.WebUi.Client.Handlers.Interfaces;
 
 public interface IUserHandler
 {

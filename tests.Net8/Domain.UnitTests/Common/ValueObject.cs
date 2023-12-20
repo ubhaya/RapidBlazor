@@ -8,7 +8,7 @@ public class ValueObject
     {
         var left = new TestValueObject("obj");
         var right = new TestValueObject("obj");
-        var result = Equals(left, right);
+        var result = left.Equals(right);
 
         result.Should().BeTrue();
     }

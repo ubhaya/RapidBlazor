@@ -6,6 +6,8 @@ using NSwag.Generation.Processors.Security;
 using RapidBlazor.Application.Common.Services.Identity;
 using RapidBlazor.Infrastructure.Data;
 using RapidBlazor.Infrastructure.Identity;
+using RapidBlazor.WebUi.Client;
+using RapidBlazor.WebUi.Client.Handlers.ServerImplementation;
 using RapidBlazor.WebUi.Client.Pages;
 using RapidBlazor.WebUi.Components;
 using RapidBlazor.WebUi.Components.Account;
@@ -47,7 +49,7 @@ builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSe
 
 builder.Services.AddControllers();
 
-builder.AddApplicationServerServices();
+builder.Services.AddApplicationServerServices();
 
 builder.Services.AddOpenApiDocument(configure =>
 {
