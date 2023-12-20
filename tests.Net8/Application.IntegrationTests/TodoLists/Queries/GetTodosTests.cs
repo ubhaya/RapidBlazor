@@ -1,8 +1,8 @@
-﻿using RapidBlazor.Old.Application.TodoLists.Queries;
-using RapidBlazor.Old.Domain.Entities;
-using RapidBlazor.Old.Domain.ValueObjects;
+﻿using RapidBlazor.Application.TodoLists.Queries;
+using RapidBlazor.Domain.Entities;
+using RapidBlazor.Domain.ValueObject;
 
-namespace RapidBlazor.Old.Application.IntegrationTests.TodoLists.Queries;
+namespace RapidBlazor.Application.IntegrationTests.TodoLists.Queries;
 
 using static Testing;
 

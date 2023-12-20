@@ -13,6 +13,8 @@ public sealed class CreateTodoListCommandValidator : AbstractValidator<CreateTod
     public CreateTodoListCommandValidator(IApplicationDbContext context)
     {
         _context = context;
+
+        RuleFor(p => p.List).SetValidator(new CreateTodoListRequestValidator());
         RuleFor(p=>p.List.Title)
             .MustAsync(BeUniqueTitle)
             .WithMessage("'Title' must be unique.")

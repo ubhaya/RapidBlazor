@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -24,19 +24,18 @@ internal class CustomWebApplicationFactory : WebApplicationFactory<Program>
             configurationBuilder.AddConfiguration(integrationConfig);
         });
 
-        builder.ConfigureServices((hostBuilder, services) =>
+        builder.ConfigureServices((builder, services) =>
         {
             services
                 .Remove<ICurrentUser>()
-                .AddTransient(_ => Mock.Of<ICurrentUser>(s =>
+                .AddTransient(provider => Mock.Of<ICurrentUser>(s =>
                     s.UserId == GetCurrentUserId()));
 
             services
                 .Remove<DbContextOptions<ApplicationDbContext>>()
                 .AddDbContext<ApplicationDbContext>((sp, options) =>
-                    options.UseSqlServer(hostBuilder.Configuration.GetConnectionString("DefaultConnection"),
-                        optionsBuilder =>
-                            optionsBuilder.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
+                    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+                        builder => builder.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
         });
     }
 }

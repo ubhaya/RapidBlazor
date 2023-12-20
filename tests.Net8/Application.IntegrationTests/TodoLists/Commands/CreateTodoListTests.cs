@@ -1,9 +1,9 @@
-﻿using RapidBlazor.Old.Application.Common.Exceptions;
-using RapidBlazor.Old.Application.TodoLists.Commands;
-using RapidBlazor.Old.Domain.Entities;
-using RapidBlazor.Old.WebUI.Shared.TodoLists;
+﻿using RapidBlazor.Application.Common.Exceptions;
+using RapidBlazor.Application.TodoLists.Commands;
+using RapidBlazor.Domain.Entities;
+using RapidBlazor.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.Old.Application.IntegrationTests.TodoLists.Commands;
+namespace RapidBlazor.Application.IntegrationTests.TodoLists.Commands;
 
 using static Testing;
 

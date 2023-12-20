@@ -1,19 +1,19 @@
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace RapidBlazor.Application.IntegrationTests;
 
 public static class ServiceCollectionExtensions
 {
-    public static IServiceCollection Remove<TService>(this IServiceCollection serviceCollection)
+    public static IServiceCollection Remove<TService>(this IServiceCollection services)
     {
-        var serviceDescriptor = serviceCollection.FirstOrDefault(d =>
+        var serviceDescriptor = services.FirstOrDefault(d =>
             d.ServiceType == typeof(TService));
 
-        if (serviceDescriptor is not null)
+        if (serviceDescriptor != null)
         {
-            serviceCollection.Remove(serviceDescriptor);
+            services.Remove(serviceDescriptor);
         }
 
-        return serviceCollection;
+        return services;
     }
 }
