@@ -39,7 +39,7 @@
         },
         "security": [
           {
-            "JWT": []
+            "basic": []
           }
         ]
       }
@@ -101,7 +101,7 @@
         },
         "security": [
           {
-            "JWT": []
+            "basic": []
           }
         ]
       },
@@ -139,7 +139,7 @@
         },
         "security": [
           {
-            "JWT": []
+            "basic": []
           }
         ]
       }
@@ -164,7 +164,7 @@
         },
         "security": [
           {
-            "JWT": []
+            "basic": []
           }
         ]
       },
@@ -200,7 +200,7 @@
         },
         "security": [
           {
-            "JWT": []
+            "basic": []
           }
         ]
       }
@@ -262,7 +262,7 @@
         },
         "security": [
           {
-            "JWT": []
+            "basic": []
           }
         ]
       },
@@ -300,7 +300,7 @@
         },
         "security": [
           {
-            "JWT": []
+            "basic": []
           }
         ]
       }
@@ -325,7 +325,7 @@
         },
         "security": [
           {
-            "JWT": []
+            "basic": []
           }
         ]
       }
@@ -361,7 +361,7 @@
         },
         "security": [
           {
-            "JWT": []
+            "basic": []
           }
         ]
       },
@@ -410,7 +410,7 @@
         },
         "security": [
           {
-            "JWT": []
+            "basic": []
           }
         ]
       }
@@ -685,17 +685,18 @@
       }
     },
     "securitySchemes": {
-      "JWT": {
-        "type": "apiKey",
+      "basic": {
+        "type": "http",
         "description": "Type into the textbox: Bearer {your JWT token}.",
-        "name": "Authorization",
-        "in": "cookie"
+        "name": ".AspNetCore.Identity.Application",
+        "in": "header",
+        "scheme": "basic"
       }
     }
   },
   "security": [
     {
-      "JWT": []
+      "basic": []
     }
   ]
 }

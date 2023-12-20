@@ -54,16 +54,16 @@ builder.Services.AddApplicationServerServices();
 builder.Services.AddOpenApiDocument(configure =>
 {
     configure.Title = "CleanArchitecture Api";
-    configure.AddSecurity("JWT", Enumerable.Empty<string>(),
+    configure.AddSecurity("basic", Enumerable.Empty<string>(),
         new OpenApiSecurityScheme
         {
-            Type = OpenApiSecuritySchemeType.ApiKey,
-            Name = "Authorization",
-            In = OpenApiSecurityApiKeyLocation.Cookie,
+            Type = OpenApiSecuritySchemeType.Basic,
+            Name = ".AspNetCore.Identity.Application",
+            In = OpenApiSecurityApiKeyLocation.Header,
             Description = "Type into the textbox: Bearer {your JWT token}."
         });
     configure.OperationProcessors.Add(
-        new AspNetCoreOperationSecurityScopeProcessor("JWT"));
+        new AspNetCoreOperationSecurityScopeProcessor("basic"));
 });
 
 var app = builder.Build();
@@ -101,10 +101,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
-app.UseSwaggerUi(configure =>
-{
-    configure.DocumentPath = "/api/v1/openapi.json";
-});
+app.UseOpenApi();
+
+app.UseSwaggerUi();
 
 app.UseReDoc(configure =>
 {
