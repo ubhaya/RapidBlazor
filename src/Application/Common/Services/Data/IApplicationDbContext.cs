@@ -1,6 +1,6 @@
-using RapidBlazor.Domain.Entities;
+using CleanArchitecture.Blazored.Domain.Entities;
 
-namespace RapidBlazor.Application.Common.Services.Data;
+namespace CleanArchitecture.Blazored.Application.Common.Services.Data;
 
 public interface IApplicationDbContext
 {

@@ -1,8 +1,8 @@
-using RapidBlazor.Domain.Entities;
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.Domain.Entities;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 using Riok.Mapperly.Abstractions;
 
-namespace RapidBlazor.Application.TodoLists;
+namespace CleanArchitecture.Blazored.Application.TodoLists;
 
 [Mapper]
 public static partial class Mapping

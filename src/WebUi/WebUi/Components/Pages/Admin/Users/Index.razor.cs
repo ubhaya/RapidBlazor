@@ -1,9 +1,9 @@
 using MediatR;
 using Microsoft.AspNetCore.Components;
-using RapidBlazor.Application.Users.Queries;
-using RapidBlazor.WebUi.Shared.AccessControl;
+using CleanArchitecture.Blazored.Application.Users.Queries;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
 
-namespace RapidBlazor.WebUi.Components.Pages.Admin.Users;
+namespace CleanArchitecture.Blazored.WebUi.Components.Pages.Admin.Users;
 
 public partial class Index
 {

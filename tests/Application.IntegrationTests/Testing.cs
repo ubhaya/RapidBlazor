@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RapidBlazor.Infrastructure.Data;
-using RapidBlazor.Infrastructure.Identity;
+using CleanArchitecture.Blazored.Infrastructure.Data;
+using CleanArchitecture.Blazored.Infrastructure.Identity;
 using Respawn;
 using Respawn.Graph;
 
-namespace RapidBlazor.Application.IntegrationTests;
+namespace CleanArchitecture.Blazored.Application.IntegrationTests;
 
 [SetUpFixture]
 public partial class Testing

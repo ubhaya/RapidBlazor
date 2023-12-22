@@ -1,12 +1,12 @@
 using Ardalis.GuardClauses;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using RapidBlazor.Application.Common.Services.Identity;
-using RapidBlazor.WebUi.Shared.AccessControl;
-using RapidBlazor.WebUi.Shared.Authorization;
-using RapidBlazor.WebUi.Shared.Common;
+using CleanArchitecture.Blazored.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
+using CleanArchitecture.Blazored.WebUi.Shared.Authorization;
+using CleanArchitecture.Blazored.WebUi.Shared.Common;
 
-namespace RapidBlazor.Infrastructure.Identity;
+namespace CleanArchitecture.Blazored.Infrastructure.Identity;
 
 public class IdentityService : IIdentityService
 {

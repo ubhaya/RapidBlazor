@@ -1,11 +1,11 @@
-﻿using RapidBlazor.Application.Common.Exceptions;
-using RapidBlazor.Application.TodoItems.Commands;
-using RapidBlazor.Application.TodoLists.Commands;
-using RapidBlazor.Domain.Entities;
-using RapidBlazor.WebUi.Shared.TodoItems;
-using RapidBlazor.WebUi.Shared.TodoLists;
+﻿using CleanArchitecture.Blazored.Application.Common.Exceptions;
+using CleanArchitecture.Blazored.Application.TodoItems.Commands;
+using CleanArchitecture.Blazored.Application.TodoLists.Commands;
+using CleanArchitecture.Blazored.Domain.Entities;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoItems;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.Application.IntegrationTests.TodoItems.Commands;
+namespace CleanArchitecture.Blazored.Application.IntegrationTests.TodoItems.Commands;
 
 using static Testing;
 

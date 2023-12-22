@@ -1,6 +1,6 @@
-using RapidBlazor.Application.Common.Services.Data;
+using CleanArchitecture.Blazored.Application.Common.Services.Data;
 
-namespace RapidBlazor.Application.TodoItems.Commands;
+namespace CleanArchitecture.Blazored.Application.TodoItems.Commands;
 
 public sealed record DeleteTodoItemCommand(int Id) : IRequest<Unit>;
 

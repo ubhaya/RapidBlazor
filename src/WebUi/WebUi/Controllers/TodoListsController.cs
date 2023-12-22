@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using RapidBlazor.Application.TodoLists.Commands;
-using RapidBlazor.Application.TodoLists.Queries;
-using RapidBlazor.WebUi.Shared.Authorization;
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.Application.TodoLists.Commands;
+using CleanArchitecture.Blazored.Application.TodoLists.Queries;
+using CleanArchitecture.Blazored.WebUi.Shared.Authorization;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.WebUi.Controllers;
+namespace CleanArchitecture.Blazored.WebUi.Controllers;
 
 [Authorize(Permissions.Todo)]
 public class TodoListsController : ApiControllerBase

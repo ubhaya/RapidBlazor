@@ -3,16 +3,16 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using NSwag;
 using NSwag.Generation.Processors.Security;
-using RapidBlazor.Application.Common.Services.Identity;
-using RapidBlazor.Infrastructure.Data;
-using RapidBlazor.Infrastructure.Identity;
-using RapidBlazor.WebUi.Client;
-using RapidBlazor.WebUi.Client.Handlers.ServerImplementation;
-using RapidBlazor.WebUi.Client.Pages;
-using RapidBlazor.WebUi.Components;
-using RapidBlazor.WebUi.Components.Account;
-using RapidBlazor.WebUi.Services;
-using RapidBlazor.WebUi.Shared.Authorization;
+using CleanArchitecture.Blazored.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.Infrastructure.Data;
+using CleanArchitecture.Blazored.Infrastructure.Identity;
+using CleanArchitecture.Blazored.WebUi.Client;
+using CleanArchitecture.Blazored.WebUi.Client.Handlers.ServerImplementation;
+using CleanArchitecture.Blazored.WebUi.Client.Pages;
+using CleanArchitecture.Blazored.WebUi.Components;
+using CleanArchitecture.Blazored.WebUi.Components.Account;
+using CleanArchitecture.Blazored.WebUi.Services;
+using CleanArchitecture.Blazored.WebUi.Shared.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,8 +1,8 @@
 using MediatR.Pipeline;
 using Microsoft.Extensions.Logging;
-using RapidBlazor.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.Application.Common.Services.Identity;
 
-namespace RapidBlazor.Application.Common.Behaviours;
+namespace CleanArchitecture.Blazored.Application.Common.Behaviours;
 
 public sealed class LoggingBehaviour<TRequest>
     : IRequestPreProcessor<TRequest> where TRequest : notnull

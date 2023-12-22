@@ -1,7 +1,7 @@
-using RapidBlazor.Application.Common.Services.Identity;
-using RapidBlazor.WebUi.Shared.AccessControl;
+using CleanArchitecture.Blazored.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
 
-namespace RapidBlazor.Application.Users.Commands;
+namespace CleanArchitecture.Blazored.Application.Users.Commands;
 
 public sealed record UpdateUserCommand(UserDto User) : IRequest<Unit>;
 

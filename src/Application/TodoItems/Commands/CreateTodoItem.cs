@@ -1,10 +1,10 @@
 using FluentValidation;
-using RapidBlazor.Application.Common.Services.Data;
-using RapidBlazor.Domain.Entities;
-using RapidBlazor.Domain.Events;
-using RapidBlazor.WebUi.Shared.TodoItems;
+using CleanArchitecture.Blazored.Application.Common.Services.Data;
+using CleanArchitecture.Blazored.Domain.Entities;
+using CleanArchitecture.Blazored.Domain.Events;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoItems;
 
-namespace RapidBlazor.Application.TodoItems.Commands;
+namespace CleanArchitecture.Blazored.Application.TodoItems.Commands;
 
 public sealed record CreateTodoItemCommand(CreateTodoItemRequest Item) : IRequest<int>;
 

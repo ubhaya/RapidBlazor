@@ -1,10 +1,10 @@
 
 
-using RapidBlazor.Application.Common.Behaviours;
-using RapidBlazor.Application.TodoItems.Commands;
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.Application.Common.Behaviours;
+using CleanArchitecture.Blazored.Application.TodoItems.Commands;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 using FluentValidation;
-using RapidBlazor.Application.TodoLists.Commands;
+using CleanArchitecture.Blazored.Application.TodoLists.Commands;
 
 // ReSharper disable once CheckNamespace
 namespace Microsoft.Extensions.DependencyInjection;

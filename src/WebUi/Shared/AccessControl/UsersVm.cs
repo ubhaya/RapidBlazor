@@ -1,4 +1,4 @@
-﻿namespace RapidBlazor.WebUi.Shared.AccessControl;
+﻿namespace CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
 
 public class UsersVm
 {

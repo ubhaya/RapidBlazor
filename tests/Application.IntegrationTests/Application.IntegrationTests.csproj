@@ -4,8 +4,8 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>RapidBlazor.Application.IntegrationTests</RootNamespace>
-        <AssemblyName>RapidBlazor.Application.IntegrationTests</AssemblyName>
+        <RootNamespace>CleanArchitecture.Blazored.Application.IntegrationTests</RootNamespace>
+        <AssemblyName>CleanArchitecture.Blazored.Application.IntegrationTests</AssemblyName>
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>

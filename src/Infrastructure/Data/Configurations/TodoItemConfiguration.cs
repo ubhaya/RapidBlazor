@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using RapidBlazor.Domain.Entities;
+using CleanArchitecture.Blazored.Domain.Entities;
 
-namespace RapidBlazor.Infrastructure.Data.Configurations;
+namespace CleanArchitecture.Blazored.Infrastructure.Data.Configurations;
 
 public class TodoItemConfiguration : IEntityTypeConfiguration<TodoItem>
 {

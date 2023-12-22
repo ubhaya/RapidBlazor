@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using RapidBlazor.WebUi.Shared.Authorization;
+using CleanArchitecture.Blazored.WebUi.Shared.Authorization;
 using System.Security.Claims;
 
-namespace RapidBlazor.Infrastructure.Identity;
+namespace CleanArchitecture.Blazored.Infrastructure.Identity;
 
 public class ApplicationUserClaimsPrincipalFactory : UserClaimsPrincipalFactory<ApplicationUser, ApplicationRole>
 {

@@ -1,8 +1,8 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using RapidBlazor.Domain.Common;
+using CleanArchitecture.Blazored.Domain.Common;
 
-namespace RapidBlazor.Infrastructure.Common;
+namespace CleanArchitecture.Blazored.Infrastructure.Common;
 
 public static class MediatorExtensions
 {

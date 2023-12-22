@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace RapidBlazor.Application.IntegrationTests;
+namespace CleanArchitecture.Blazored.Application.IntegrationTests;
 
 public static class ServiceCollectionExtensions
 {

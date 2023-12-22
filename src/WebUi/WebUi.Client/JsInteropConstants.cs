@@ -1,4 +1,4 @@
-namespace RapidBlazor.WebUi.Client;
+namespace CleanArchitecture.Blazored.WebUi.Client;
 
 public class JsInteropConstants
 {

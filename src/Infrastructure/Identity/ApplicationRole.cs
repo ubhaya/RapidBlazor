@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using RapidBlazor.WebUi.Shared.Authorization;
+using CleanArchitecture.Blazored.WebUi.Shared.Authorization;
 
-namespace RapidBlazor.Infrastructure.Identity;
+namespace CleanArchitecture.Blazored.Infrastructure.Identity;
 
 public class ApplicationRole : IdentityRole
 {

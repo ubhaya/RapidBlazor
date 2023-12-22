@@ -1,22 +1,22 @@
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "JasonTaylorDev",
+  "author": "Ubhaya Hettiarachchi",
   "classifications": [
     "Web",
     "Blazor",
     "WebAssembly",
     "Clean Architecture"
   ],
-  "name": "Rapid Blazor App",
-  "description":  "This is a solution template for creating a Blazor WebAssembly application hosted on ASP.NET Core 6 and following the principles of Clean Architecture.",
-  "identity": "JasonTaylorDev.RapidBlazor.Solution.CSharp",
-  "groupIdentity": "JasonTaylorDev.RapidBlazor",
-  "shortName": "rapid-blazor-sln",
+  "name": "Clean Architecture Blazor Web App",
+  "description":  "This is a solution template for creating a Blazor Web application hosted on ASP.NET Core 8 and following the principles of Clean Architecture.",
+  "identity": "Ubhaya.Hettiarachchi.CleanArchitecture.Blazored.CSharp",
+  "groupIdentity": "CleanArchitecture.Blazored",
+  "shortName": "clean-architecture-blazored",
   "tags": {
     "language": "C#",
     "type": "project"
   },
-  "sourceName": "RapidBlazor",
+  "sourceName": "CleanArchitecture.Blazored",
   "preferNameDirectory": true,
   "sources": [
     {

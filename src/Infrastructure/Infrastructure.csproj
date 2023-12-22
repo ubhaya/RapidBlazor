@@ -4,8 +4,8 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <AssemblyName>RapidBlazor.Infrastructure</AssemblyName>
-        <RootNamespace>RapidBlazor.Infrastructure</RootNamespace>
+        <AssemblyName>CleanArchitecture.Blazored.Infrastructure</AssemblyName>
+        <RootNamespace>CleanArchitecture.Blazored.Infrastructure</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

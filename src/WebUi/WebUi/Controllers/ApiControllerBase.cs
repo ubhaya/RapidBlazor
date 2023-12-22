@@ -1,8 +1,8 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RapidBlazor.WebUi.Filters;
+using CleanArchitecture.Blazored.WebUi.Filters;
 
-namespace RapidBlazor.WebUi.Controllers;
+namespace CleanArchitecture.Blazored.WebUi.Controllers;
 
 [ApiController]
 [ApiExceptionFilter]

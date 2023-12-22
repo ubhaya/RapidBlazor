@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Components;
-using RapidBlazor.WebUi.Client.Handlers;
-using RapidBlazor.WebUi.Client.Handlers.Interfaces;
-using RapidBlazor.WebUi.Shared.AccessControl;
+using CleanArchitecture.Blazored.WebUi.Client.Handlers;
+using CleanArchitecture.Blazored.WebUi.Client.Handlers.Interfaces;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
 
-namespace RapidBlazor.WebUi.Client.Pages.Admin.Users;
+namespace CleanArchitecture.Blazored.WebUi.Client.Pages.Admin.Users;
 
 public partial class Edit
 {

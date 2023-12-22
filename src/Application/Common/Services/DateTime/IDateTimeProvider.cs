@@ -1,4 +1,4 @@
-namespace RapidBlazor.Application.Common.Services.DateTime;
+namespace CleanArchitecture.Blazored.Application.Common.Services.DateTime;
 
 public interface IDateTimeProvider
 {

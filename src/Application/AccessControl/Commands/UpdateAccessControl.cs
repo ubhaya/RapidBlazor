@@ -1,7 +1,7 @@
-using RapidBlazor.Application.Common.Services.Identity;
-using RapidBlazor.WebUi.Shared.Authorization;
+using CleanArchitecture.Blazored.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.WebUi.Shared.Authorization;
 
-namespace RapidBlazor.Application.AccessControl.Commands;
+namespace CleanArchitecture.Blazored.Application.AccessControl.Commands;
 
 public sealed record UpdateAccessControlCommand(string RoleId, Permissions Permissions) : IRequest<Unit>;
 

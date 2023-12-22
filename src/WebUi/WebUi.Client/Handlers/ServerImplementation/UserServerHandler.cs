@@ -1,10 +1,10 @@
 using MediatR;
-using RapidBlazor.Application.Users.Commands;
-using RapidBlazor.Application.Users.Queries;
-using RapidBlazor.WebUi.Client.Handlers.Interfaces;
-using RapidBlazor.WebUi.Shared.AccessControl;
+using CleanArchitecture.Blazored.Application.Users.Commands;
+using CleanArchitecture.Blazored.Application.Users.Queries;
+using CleanArchitecture.Blazored.WebUi.Client.Handlers.Interfaces;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
 
-namespace RapidBlazor.WebUi.Client.Handlers.ServerImplementation;
+namespace CleanArchitecture.Blazored.WebUi.Client.Handlers.ServerImplementation;
 
 internal class UserServerHandler : IUserHandler
 {

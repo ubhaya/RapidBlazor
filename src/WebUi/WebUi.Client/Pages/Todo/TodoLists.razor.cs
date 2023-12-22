@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.JSInterop;
 using Newtonsoft.Json;
-using RapidBlazor.WebUi.Client.Components;
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.WebUi.Client.Components;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.WebUi.Client.Pages.Todo;
+namespace CleanArchitecture.Blazored.WebUi.Client.Pages.Todo;
 
 public partial class TodoLists
 {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using RapidBlazor.WebUi.Shared.WeatherForecasts;
+using CleanArchitecture.Blazored.WebUi.Shared.WeatherForecasts;
 
-namespace RapidBlazor.Application.WeatherForecasts.Queries;
+namespace CleanArchitecture.Blazored.Application.WeatherForecasts.Queries;
 
 public class GetWeatherForecastsQuery : IRequest<IList<WeatherForecast>>
 {

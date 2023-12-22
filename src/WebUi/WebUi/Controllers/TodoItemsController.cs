@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using RapidBlazor.Application.TodoItems.Commands;
-using RapidBlazor.WebUi.Shared.Authorization;
-using RapidBlazor.WebUi.Shared.TodoItems;
+using CleanArchitecture.Blazored.Application.TodoItems.Commands;
+using CleanArchitecture.Blazored.WebUi.Shared.Authorization;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoItems;
 
-namespace RapidBlazor.WebUi.Controllers;
+namespace CleanArchitecture.Blazored.WebUi.Controllers;
 
 [Authorize(Permissions.Todo)]
 public class TodoItemsController : ApiControllerBase

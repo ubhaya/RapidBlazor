@@ -1,7 +1,7 @@
-using RapidBlazor.Domain.Common;
-using RapidBlazor.Domain.Exceptions;
+using CleanArchitecture.Blazored.Domain.Common;
+using CleanArchitecture.Blazored.Domain.Exceptions;
 
-namespace RapidBlazor.Domain.ValueObject;
+namespace CleanArchitecture.Blazored.Domain.ValueObject;
 
 public class Colour : Common.ValueObject
 {

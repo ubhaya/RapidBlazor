@@ -1,11 +1,11 @@
 using MediatR;
 using Microsoft.AspNetCore.Components;
-using RapidBlazor.Application.Roles.Commands;
-using RapidBlazor.Application.Roles.Queries;
-using RapidBlazor.WebUi.Shared.AccessControl;
-using RapidBlazor.WebUi.Shared.Authorization;
+using CleanArchitecture.Blazored.Application.Roles.Commands;
+using CleanArchitecture.Blazored.Application.Roles.Queries;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
+using CleanArchitecture.Blazored.WebUi.Shared.Authorization;
 
-namespace RapidBlazor.WebUi.Components.Pages.Admin.Roles;
+namespace CleanArchitecture.Blazored.WebUi.Components.Pages.Admin.Roles;
 
 public partial class Index
 {

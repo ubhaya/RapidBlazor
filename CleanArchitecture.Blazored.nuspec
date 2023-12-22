@@ -15,7 +15,7 @@
     </releaseNotes>
 
     <projectUrl>https://github.com/JasonTaylorDev/RapidBlazor</projectUrl>
-    <repository type="git" url="https://github.com/JasonTaylorDev/RapidBlazor.git" branch="main" />
+    <repository type="git" url="https://github.com/JasonTaylorDev/CleanArchitecture.Blazored.git" branch="main" />
 
     <license type="expression">MIT</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

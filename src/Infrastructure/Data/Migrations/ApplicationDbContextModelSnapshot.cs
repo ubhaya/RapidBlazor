@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RapidBlazor.Infrastructure.Data;
+using CleanArchitecture.Blazored.Infrastructure.Data;
 
 #nullable disable
 
-namespace RapidBlazor.Infrastructure.Data.Migrations
+namespace CleanArchitecture.Blazored.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -128,7 +128,7 @@ namespace RapidBlazor.Infrastructure.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("RapidBlazor.Domain.Entities.TodoItem", b =>
+            modelBuilder.Entity("CleanArchitecture.Blazored.Domain.Entities.TodoItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -177,7 +177,7 @@ namespace RapidBlazor.Infrastructure.Data.Migrations
                     b.ToTable("TodoItems");
                 });
 
-            modelBuilder.Entity("RapidBlazor.Domain.Entities.TodoList", b =>
+            modelBuilder.Entity("CleanArchitecture.Blazored.Domain.Entities.TodoList", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -211,7 +211,7 @@ namespace RapidBlazor.Infrastructure.Data.Migrations
                     b.ToTable("TodoLists");
                 });
 
-            modelBuilder.Entity("RapidBlazor.Infrastructure.Identity.ApplicationRole", b =>
+            modelBuilder.Entity("CleanArchitecture.Blazored.Infrastructure.Identity.ApplicationRole", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -241,7 +241,7 @@ namespace RapidBlazor.Infrastructure.Data.Migrations
                     b.ToTable("AspNetRoles", (string)null);
                 });
 
-            modelBuilder.Entity("RapidBlazor.Infrastructure.Identity.ApplicationUser", b =>
+            modelBuilder.Entity("CleanArchitecture.Blazored.Infrastructure.Identity.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -308,7 +308,7 @@ namespace RapidBlazor.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.HasOne("RapidBlazor.Infrastructure.Identity.ApplicationRole", null)
+                    b.HasOne("CleanArchitecture.Blazored.Infrastructure.Identity.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -317,7 +317,7 @@ namespace RapidBlazor.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("RapidBlazor.Infrastructure.Identity.ApplicationUser", null)
+                    b.HasOne("CleanArchitecture.Blazored.Infrastructure.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -326,7 +326,7 @@ namespace RapidBlazor.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("RapidBlazor.Infrastructure.Identity.ApplicationUser", null)
+                    b.HasOne("CleanArchitecture.Blazored.Infrastructure.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -335,13 +335,13 @@ namespace RapidBlazor.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
-                    b.HasOne("RapidBlazor.Infrastructure.Identity.ApplicationRole", null)
+                    b.HasOne("CleanArchitecture.Blazored.Infrastructure.Identity.ApplicationRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("RapidBlazor.Infrastructure.Identity.ApplicationUser", null)
+                    b.HasOne("CleanArchitecture.Blazored.Infrastructure.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -350,16 +350,16 @@ namespace RapidBlazor.Infrastructure.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("RapidBlazor.Infrastructure.Identity.ApplicationUser", null)
+                    b.HasOne("CleanArchitecture.Blazored.Infrastructure.Identity.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("RapidBlazor.Domain.Entities.TodoItem", b =>
+            modelBuilder.Entity("CleanArchitecture.Blazored.Domain.Entities.TodoItem", b =>
                 {
-                    b.HasOne("RapidBlazor.Domain.Entities.TodoList", "List")
+                    b.HasOne("CleanArchitecture.Blazored.Domain.Entities.TodoList", "List")
                         .WithMany("Items")
                         .HasForeignKey("ListId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -368,7 +368,7 @@ namespace RapidBlazor.Infrastructure.Data.Migrations
                     b.Navigation("List");
                 });
 
-            modelBuilder.Entity("RapidBlazor.Domain.Entities.TodoList", b =>
+            modelBuilder.Entity("CleanArchitecture.Blazored.Domain.Entities.TodoList", b =>
                 {
                     b.Navigation("Items");
                 });

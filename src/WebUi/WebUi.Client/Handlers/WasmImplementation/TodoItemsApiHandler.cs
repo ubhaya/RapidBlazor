@@ -1,7 +1,7 @@
-using RapidBlazor.WebUi.Client.Handlers.Interfaces;
-using RapidBlazor.WebUi.Shared.TodoItems;
+using CleanArchitecture.Blazored.WebUi.Client.Handlers.Interfaces;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoItems;
 
-namespace RapidBlazor.WebUi.Client.Handlers.WasmImplementation;
+namespace CleanArchitecture.Blazored.WebUi.Client.Handlers.WasmImplementation;
 
 internal class TodoItemsApiHandler : ITodoItemsHandler
 {

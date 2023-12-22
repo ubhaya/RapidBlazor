@@ -1,11 +1,11 @@
 using Microsoft.Extensions.Logging;
 using Moq;
-using RapidBlazor.Application.Common.Behaviours;
-using RapidBlazor.Application.Common.Services.Identity;
-using RapidBlazor.Application.TodoItems.Commands;
-using RapidBlazor.WebUi.Shared.TodoItems;
+using CleanArchitecture.Blazored.Application.Common.Behaviours;
+using CleanArchitecture.Blazored.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.Application.TodoItems.Commands;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoItems;
 
-namespace RapidBlazor.Application.UnitTests.Common.Behaviours;
+namespace CleanArchitecture.Blazored.Application.UnitTests.Common.Behaviours;
 
 public class RequestLoggerTests
 {

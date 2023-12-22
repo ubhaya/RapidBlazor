@@ -1,4 +1,4 @@
-namespace RapidBlazor.Domain.UnitTests.Common;
+namespace CleanArchitecture.Blazored.Domain.UnitTests.Common;
 
 public class ValueObject
 {

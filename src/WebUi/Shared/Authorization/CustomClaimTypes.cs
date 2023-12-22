@@ -1,4 +1,4 @@
-﻿namespace RapidBlazor.WebUi.Shared.Authorization;
+﻿namespace CleanArchitecture.Blazored.WebUi.Shared.Authorization;
 
 public static class CustomClaimTypes
 {

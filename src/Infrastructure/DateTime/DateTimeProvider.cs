@@ -1,6 +1,6 @@
-using RapidBlazor.Application.Common.Services.DateTime;
+using CleanArchitecture.Blazored.Application.Common.Services.DateTime;
 
-namespace RapidBlazor.Infrastructure.DateTime;
+namespace CleanArchitecture.Blazored.Infrastructure.DateTime;
 
 public class DateTimeProvider : IDateTimeProvider
 {

@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace RapidBlazor.WebUi.AcceptanceTests.Features
+namespace CleanArchitecture.Blazored.WebUi.AcceptanceTests.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -33,7 +33,7 @@ namespace RapidBlazor.WebUi.AcceptanceTests.Features
 #line 1 "Login.feature"
 #line hidden
         
-        public LoginFeature(LoginFeature.FixtureData fixtureData, RapidBlazor_WebUi_AcceptanceTests_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public LoginFeature(LoginFeature.FixtureData fixtureData, CleanArchitecture_Blazored_WebUi_AcceptanceTests_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();

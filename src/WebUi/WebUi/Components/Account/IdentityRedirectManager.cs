@@ -1,7 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components;
 
-namespace RapidBlazor.WebUi.Components.Account;
+namespace CleanArchitecture.Blazored.WebUi.Components.Account;
 
 internal sealed class IdentityRedirectManager(NavigationManager navigationManager)
 {

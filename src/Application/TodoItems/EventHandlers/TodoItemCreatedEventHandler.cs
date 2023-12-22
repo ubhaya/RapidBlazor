@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using RapidBlazor.Domain.Events;
+using CleanArchitecture.Blazored.Domain.Events;
 
-namespace RapidBlazor.Application.TodoItems.EventHandlers;
+namespace CleanArchitecture.Blazored.Application.TodoItems.EventHandlers;
 
 public class TodoItemCreatedEventHandler : INotificationHandler<TodoItemCreatedEvent>
 {

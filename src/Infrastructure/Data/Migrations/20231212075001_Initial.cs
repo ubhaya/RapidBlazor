@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace RapidBlazor.Infrastructure.Data.Migrations
+namespace CleanArchitecture.Blazored.Infrastructure.Data.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration

@@ -7,8 +7,8 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
-        <AssemblyName>RapidBlazor.Application.UnitTests</AssemblyName>
-        <RootNamespace>RapidBlazor.Application.UnitTests</RootNamespace>
+        <AssemblyName>CleanArchitecture.Blazored.Application.UnitTests</AssemblyName>
+        <RootNamespace>CleanArchitecture.Blazored.Application.UnitTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

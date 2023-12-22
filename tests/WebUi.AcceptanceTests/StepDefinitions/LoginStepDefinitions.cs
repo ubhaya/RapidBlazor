@@ -1,10 +1,10 @@
 using BoDi;
 using FluentAssertions;
 using Microsoft.Playwright;
-using RapidBlazor.WebUi.AcceptanceTests.Pages;
+using CleanArchitecture.Blazored.WebUi.AcceptanceTests.Pages;
 using TechTalk.SpecFlow;
 
-namespace RapidBlazor.WebUi.AcceptanceTests.StepDefinitions;
+namespace CleanArchitecture.Blazored.WebUi.AcceptanceTests.StepDefinitions;
 
 [Binding]
 public class LoginStepDefinitions

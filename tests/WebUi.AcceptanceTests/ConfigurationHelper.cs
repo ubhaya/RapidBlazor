@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace RapidBlazor.WebUi.AcceptanceTests;
+namespace CleanArchitecture.Blazored.WebUi.AcceptanceTests;
 
 public static class ConfigurationHelper
 {

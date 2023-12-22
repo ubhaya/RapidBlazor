@@ -1,4 +1,4 @@
-﻿namespace RapidBlazor.WebUi.Shared.TodoLists;
+﻿namespace CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
 public class TodoItemDto
 {

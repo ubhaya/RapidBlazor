@@ -1,9 +1,9 @@
 using FluentValidation;
-using RapidBlazor.Application.Common.Services.Data;
-using RapidBlazor.Domain.Entities;
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.Application.Common.Services.Data;
+using CleanArchitecture.Blazored.Domain.Entities;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.Application.TodoLists.Commands;
+namespace CleanArchitecture.Blazored.Application.TodoLists.Commands;
 
 public sealed record CreateTodoListCommand(CreateTodoListRequest List) : IRequest<int>;
 

@@ -1,6 +1,6 @@
 using NetEscapades.EnumGenerators;
 
-namespace RapidBlazor.Domain.Enums;
+namespace CleanArchitecture.Blazored.Domain.Enums;
 
 [EnumExtensions]
 public enum PriorityLevel

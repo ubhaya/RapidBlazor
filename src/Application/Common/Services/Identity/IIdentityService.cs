@@ -1,8 +1,8 @@
-using RapidBlazor.WebUi.Shared.AccessControl;
-using RapidBlazor.WebUi.Shared.Authorization;
-using RapidBlazor.WebUi.Shared.Common;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
+using CleanArchitecture.Blazored.WebUi.Shared.Authorization;
+using CleanArchitecture.Blazored.WebUi.Shared.Common;
 
-namespace RapidBlazor.Application.Common.Services.Identity;
+namespace CleanArchitecture.Blazored.Application.Common.Services.Identity;
 
 public interface IIdentityService
 {

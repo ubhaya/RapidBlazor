@@ -1,7 +1,7 @@
-using RapidBlazor.Application.Common.Services.Identity;
-using RapidBlazor.WebUi.Shared.AccessControl;
+using CleanArchitecture.Blazored.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
 
-namespace RapidBlazor.Application.Roles.Commands;
+namespace CleanArchitecture.Blazored.Application.Roles.Commands;
 
 public sealed record CreateRoleCommand(RoleDto Role) : IRequest<Unit>;
 

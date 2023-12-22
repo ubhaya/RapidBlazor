@@ -1,9 +1,9 @@
-using RapidBlazor.Application.Common.Services.Data;
-using RapidBlazor.Domain.Enums;
-using RapidBlazor.WebUi.Shared.Common;
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.Application.Common.Services.Data;
+using CleanArchitecture.Blazored.Domain.Enums;
+using CleanArchitecture.Blazored.WebUi.Shared.Common;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.Application.TodoLists.Queries;
+namespace CleanArchitecture.Blazored.Application.TodoLists.Queries;
 
 public sealed record GetTodoListsQuery : IRequest<TodosVm>;
 

@@ -1,7 +1,7 @@
 using System.Collections.Immutable;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace RapidBlazor.Domain.Common;
+namespace CleanArchitecture.Blazored.Domain.Common;
 
 public abstract class BaseEntity
 {

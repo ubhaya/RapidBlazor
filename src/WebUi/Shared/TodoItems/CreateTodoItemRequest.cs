@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace RapidBlazor.WebUi.Shared.TodoItems;
+namespace CleanArchitecture.Blazored.WebUi.Shared.TodoItems;
 
 public class CreateTodoItemRequest
 {

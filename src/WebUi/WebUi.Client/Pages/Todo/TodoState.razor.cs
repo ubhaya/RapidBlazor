@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
-using RapidBlazor.WebUi.Client.Handlers;
-using RapidBlazor.WebUi.Client.Handlers.Interfaces;
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.WebUi.Client.Handlers;
+using CleanArchitecture.Blazored.WebUi.Client.Handlers.Interfaces;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.WebUi.Client.Pages.Todo;
+namespace CleanArchitecture.Blazored.WebUi.Client.Pages.Todo;
 
 public partial class TodoState
 {

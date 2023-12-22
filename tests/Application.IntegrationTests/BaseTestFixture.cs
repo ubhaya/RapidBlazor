@@ -1,4 +1,4 @@
-﻿namespace RapidBlazor.Application.IntegrationTests;
+﻿namespace CleanArchitecture.Blazored.Application.IntegrationTests;
 
 using static Testing;
 

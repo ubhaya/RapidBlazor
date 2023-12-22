@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 
-namespace RapidBlazor.WebUi.Client.Components;
+namespace CleanArchitecture.Blazored.WebUi.Client.Components;
 
 public class FlexibleAuthorizeView : AuthorizeView
 {

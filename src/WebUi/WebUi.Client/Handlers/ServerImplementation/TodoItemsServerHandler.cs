@@ -1,9 +1,9 @@
 using MediatR;
-using RapidBlazor.Application.TodoItems.Commands;
-using RapidBlazor.WebUi.Client.Handlers.Interfaces;
-using RapidBlazor.WebUi.Shared.TodoItems;
+using CleanArchitecture.Blazored.Application.TodoItems.Commands;
+using CleanArchitecture.Blazored.WebUi.Client.Handlers.Interfaces;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoItems;
 
-namespace RapidBlazor.WebUi.Client.Handlers.ServerImplementation;
+namespace CleanArchitecture.Blazored.WebUi.Client.Handlers.ServerImplementation;
 
 internal class TodoItemsServerHandler :ITodoItemsHandler
 {

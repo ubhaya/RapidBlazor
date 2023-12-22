@@ -5,8 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-WebUi-ef6c898a-eb3b-44e4-8acb-ba366bc63081</UserSecretsId>
-    <AssemblyName>RapidBlazor.WebUi</AssemblyName>
-    <RootNamespace>RapidBlazor.WebUi</RootNamespace>
+    <AssemblyName>CleanArchitecture.Blazored.WebUi</AssemblyName>
+    <RootNamespace>CleanArchitecture.Blazored.WebUi</RootNamespace>
       <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
   </PropertyGroup>
 
@@ -39,7 +39,7 @@
     </Target>
     
     <ItemGroup>
-        <InternalsVisibleTo Include="RapidBlazor.Application.IntegrationTests" />
+        <InternalsVisibleTo Include="CleanArchitecture.Blazored.Application.IntegrationTests" />
     </ItemGroup>
     
     <ItemGroup>

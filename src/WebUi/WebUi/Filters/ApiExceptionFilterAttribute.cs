@@ -1,9 +1,9 @@
 using Ardalis.GuardClauses;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using RapidBlazor.Application.Common.Exceptions;
+using CleanArchitecture.Blazored.Application.Common.Exceptions;
 
-namespace RapidBlazor.WebUi.Filters;
+namespace CleanArchitecture.Blazored.WebUi.Filters;
 
 public class ApiExceptionFilterAttribute : ExceptionFilterAttribute
 {

@@ -6,8 +6,8 @@
     <Nullable>enable</Nullable>
     <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
     <StaticWebAssetProjectMode>Default</StaticWebAssetProjectMode>
-    <AssemblyName>RapidBlazor.WebUi.Client</AssemblyName>
-    <RootNamespace>RapidBlazor.WebUi.Client</RootNamespace>
+    <AssemblyName>CleanArchitecture.Blazored.WebUi.Client</AssemblyName>
+    <RootNamespace>CleanArchitecture.Blazored.WebUi.Client</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

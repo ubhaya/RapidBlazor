@@ -1,6 +1,6 @@
-using RapidBlazor.WebUi.Shared.TodoItems;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoItems;
 
-namespace RapidBlazor.WebUi.Client.Handlers.Interfaces;
+namespace CleanArchitecture.Blazored.WebUi.Client.Handlers.Interfaces;
 
 public interface ITodoItemsHandler
 {

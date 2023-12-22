@@ -1,5 +1,5 @@
 using MediatR;
 
-namespace RapidBlazor.Domain.Common;
+namespace CleanArchitecture.Blazored.Domain.Common;
 
 public abstract class BaseEvent : INotification{}

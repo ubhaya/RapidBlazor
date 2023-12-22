@@ -1,4 +1,4 @@
-namespace RapidBlazor.WebUi.Shared.Common;
+namespace CleanArchitecture.Blazored.WebUi.Shared.Common;
 
 public class LookupDto
 {

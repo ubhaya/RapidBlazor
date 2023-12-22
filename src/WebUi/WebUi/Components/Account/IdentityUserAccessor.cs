@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
-using RapidBlazor.Infrastructure.Identity;
+using CleanArchitecture.Blazored.Infrastructure.Identity;
 
-namespace RapidBlazor.WebUi.Components.Account;
+namespace CleanArchitecture.Blazored.WebUi.Components.Account;
 
 internal sealed class IdentityUserAccessor(UserManager<ApplicationUser> userManager, IdentityRedirectManager redirectManager)
 {

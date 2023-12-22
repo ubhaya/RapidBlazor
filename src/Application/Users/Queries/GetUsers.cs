@@ -1,7 +1,7 @@
-﻿using RapidBlazor.Application.Common.Services.Identity;
-using RapidBlazor.WebUi.Shared.AccessControl;
+﻿using CleanArchitecture.Blazored.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
 
-namespace RapidBlazor.Application.Users.Queries;
+namespace CleanArchitecture.Blazored.Application.Users.Queries;
 
 public record GetUsersQuery() : IRequest<UsersVm>;
 

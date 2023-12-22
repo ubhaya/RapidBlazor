@@ -7,8 +7,8 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
-        <AssemblyName>RapidBlazor.WebUi.AcceptanceTests</AssemblyName>
-        <RootNamespace>RapidBlazor.WebUi.AcceptanceTests</RootNamespace>
+        <AssemblyName>CleanArchitecture.Blazored.WebUi.AcceptanceTests</AssemblyName>
+        <RootNamespace>CleanArchitecture.Blazored.WebUi.AcceptanceTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

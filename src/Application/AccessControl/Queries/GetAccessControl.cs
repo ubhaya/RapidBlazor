@@ -1,8 +1,8 @@
-using RapidBlazor.Application.Common.Services.Identity;
-using RapidBlazor.WebUi.Shared.AccessControl;
-using RapidBlazor.WebUi.Shared.Authorization;
+using CleanArchitecture.Blazored.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
+using CleanArchitecture.Blazored.WebUi.Shared.Authorization;
 
-namespace RapidBlazor.Application.AccessControl.Queries;
+namespace CleanArchitecture.Blazored.Application.AccessControl.Queries;
 
 public sealed record GetAccessControl() : IRequest<AccessControlVm>;
 

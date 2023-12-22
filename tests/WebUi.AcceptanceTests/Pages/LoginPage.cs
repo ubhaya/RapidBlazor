@@ -1,6 +1,6 @@
 using Microsoft.Playwright;
 
-namespace RapidBlazor.WebUi.AcceptanceTests.Pages;
+namespace CleanArchitecture.Blazored.WebUi.AcceptanceTests.Pages;
 
 public sealed class LoginPage : BasePage
 {

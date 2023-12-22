@@ -1,10 +1,10 @@
 using MediatR;
-using RapidBlazor.Application.TodoLists.Commands;
-using RapidBlazor.Application.TodoLists.Queries;
-using RapidBlazor.WebUi.Client.Handlers.Interfaces;
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.Application.TodoLists.Commands;
+using CleanArchitecture.Blazored.Application.TodoLists.Queries;
+using CleanArchitecture.Blazored.WebUi.Client.Handlers.Interfaces;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.WebUi.Client.Handlers.ServerImplementation;
+namespace CleanArchitecture.Blazored.WebUi.Client.Handlers.ServerImplementation;
 
 internal class TodoListServerHandler : ITodoListHandler
 {

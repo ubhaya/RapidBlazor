@@ -1,9 +1,9 @@
 ﻿using Ardalis.GuardClauses;
-using RapidBlazor.Application.TodoLists.Commands;
-using RapidBlazor.Domain.Entities;
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.Application.TodoLists.Commands;
+using CleanArchitecture.Blazored.Domain.Entities;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.Application.IntegrationTests.TodoLists.Commands;
+namespace CleanArchitecture.Blazored.Application.IntegrationTests.TodoLists.Commands;
 
 using static Testing;
 

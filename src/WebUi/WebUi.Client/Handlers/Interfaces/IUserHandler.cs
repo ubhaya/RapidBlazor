@@ -1,6 +1,6 @@
-using RapidBlazor.WebUi.Shared.AccessControl;
+using CleanArchitecture.Blazored.WebUi.Shared.AccessControl;
 
-namespace RapidBlazor.WebUi.Client.Handlers.Interfaces;
+namespace CleanArchitecture.Blazored.WebUi.Client.Handlers.Interfaces;
 
 public interface IUserHandler
 {

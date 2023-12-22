@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using RapidBlazor.WebUi.Client;
+using CleanArchitecture.Blazored.WebUi.Client;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 

@@ -4,13 +4,13 @@ using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
-using RapidBlazor.Infrastructure.Identity;
-using RapidBlazor.WebUi.Components.Account.Pages;
-using RapidBlazor.WebUi.Components.Account.Pages.Manage;
+using CleanArchitecture.Blazored.Infrastructure.Identity;
+using CleanArchitecture.Blazored.WebUi.Components.Account.Pages;
+using CleanArchitecture.Blazored.WebUi.Components.Account.Pages.Manage;
 using System.Security.Claims;
 using System.Text.Json;
 
-namespace RapidBlazor.WebUi.Components.Account;
+namespace CleanArchitecture.Blazored.WebUi.Components.Account;
 
 internal static class IdentityComponentsEndpointRouteBuilderExtensions
 {

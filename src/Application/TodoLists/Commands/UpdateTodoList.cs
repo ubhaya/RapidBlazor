@@ -1,8 +1,8 @@
 using FluentValidation;
-using RapidBlazor.Application.Common.Services.Data;
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.Application.Common.Services.Data;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.Application.TodoLists.Commands;
+namespace CleanArchitecture.Blazored.Application.TodoLists.Commands;
 
 public sealed record UpdateTodoListCommand(UpdateTodoListRequest List) : IRequest<Unit>;
 

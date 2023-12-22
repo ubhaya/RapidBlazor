@@ -1,6 +1,6 @@
-using RapidBlazor.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.Application.Common.Services.Identity;
 
-namespace RapidBlazor.Application.Roles.Commands;
+namespace CleanArchitecture.Blazored.Application.Roles.Commands;
 
 public sealed record DeleteRoleCommand(string RoleId) : IRequest<Unit>;
 

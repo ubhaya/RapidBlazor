@@ -1,6 +1,6 @@
 using NetEscapades.EnumGenerators;
 
-namespace RapidBlazor.WebUi.Shared.Authorization;
+namespace CleanArchitecture.Blazored.WebUi.Shared.Authorization;
 
 [Flags]
 [EnumExtensions]

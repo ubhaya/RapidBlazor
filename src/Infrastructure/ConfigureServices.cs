@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using RapidBlazor.Application.Common.Services.Data;
-using RapidBlazor.Infrastructure.Data;
-using RapidBlazor.Infrastructure.Data.Interceptors;
-using RapidBlazor.Infrastructure.Identity;
+using CleanArchitecture.Blazored.Application.Common.Services.Data;
+using CleanArchitecture.Blazored.Infrastructure.Data;
+using CleanArchitecture.Blazored.Infrastructure.Data.Interceptors;
+using CleanArchitecture.Blazored.Infrastructure.Identity;
 using Microsoft.Extensions.Configuration;
-using RapidBlazor.Application.Common.Services.DateTime;
-using RapidBlazor.Application.Common.Services.Identity;
-using RapidBlazor.Infrastructure.DateTime;
+using CleanArchitecture.Blazored.Application.Common.Services.DateTime;
+using CleanArchitecture.Blazored.Application.Common.Services.Identity;
+using CleanArchitecture.Blazored.Infrastructure.DateTime;
 
 // ReSharper disable once CheckNamespace
 namespace Microsoft.Extensions.DependencyInjection;

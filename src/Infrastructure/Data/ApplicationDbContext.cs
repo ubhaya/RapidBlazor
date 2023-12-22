@@ -1,14 +1,14 @@
 using MediatR;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using RapidBlazor.Application.Common.Services.Data;
-using RapidBlazor.Domain.Entities;
-using RapidBlazor.Infrastructure.Common;
-using RapidBlazor.Infrastructure.Data.Interceptors;
-using RapidBlazor.Infrastructure.Identity;
+using CleanArchitecture.Blazored.Application.Common.Services.Data;
+using CleanArchitecture.Blazored.Domain.Entities;
+using CleanArchitecture.Blazored.Infrastructure.Common;
+using CleanArchitecture.Blazored.Infrastructure.Data.Interceptors;
+using CleanArchitecture.Blazored.Infrastructure.Identity;
 using System.Reflection;
 
-namespace RapidBlazor.Infrastructure.Data;
+namespace CleanArchitecture.Blazored.Infrastructure.Data;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>, IApplicationDbContext
 {

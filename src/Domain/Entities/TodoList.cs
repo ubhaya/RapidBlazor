@@ -1,6 +1,6 @@
-using RapidBlazor.Domain.Common;
+using CleanArchitecture.Blazored.Domain.Common;
 
-namespace RapidBlazor.Domain.Entities;
+namespace CleanArchitecture.Blazored.Domain.Entities;
 
 public sealed class TodoList : BaseAuditableEntity
 {

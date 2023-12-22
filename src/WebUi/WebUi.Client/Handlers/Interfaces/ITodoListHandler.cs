@@ -1,6 +1,6 @@
-using RapidBlazor.WebUi.Shared.TodoLists;
+using CleanArchitecture.Blazored.WebUi.Shared.TodoLists;
 
-namespace RapidBlazor.WebUi.Client.Handlers.Interfaces;
+namespace CleanArchitecture.Blazored.WebUi.Client.Handlers.Interfaces;
 
 public interface ITodoListHandler
 {

@@ -1,7 +1,7 @@
 using FluentValidation;
-using ValidationException = RapidBlazor.Application.Common.Exceptions.ValidationException;
+using ValidationException = CleanArchitecture.Blazored.Application.Common.Exceptions.ValidationException;
 
-namespace RapidBlazor.Application.Common.Behaviours;
+namespace CleanArchitecture.Blazored.Application.Common.Behaviours;
 
 public sealed class ValidationBehavior<TRequest, TResponse>
     :IPipelineBehavior<TRequest, TResponse>

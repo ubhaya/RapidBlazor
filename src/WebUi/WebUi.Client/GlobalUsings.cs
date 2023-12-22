@@ -1,1 +1,1 @@
-global using RapidBlazor.WebUi.Shared.Authorization;
+global using CleanArchitecture.Blazored.WebUi.Shared.Authorization;

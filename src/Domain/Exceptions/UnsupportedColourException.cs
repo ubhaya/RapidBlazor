@@ -1,4 +1,4 @@
-namespace RapidBlazor.Domain.Exceptions;
+namespace CleanArchitecture.Blazored.Domain.Exceptions;
 
 public class UnsupportedColourException : Exception
 {

@@ -1,7 +1,7 @@
-using RapidBlazor.Domain.Common;
-using RapidBlazor.Domain.Enums;
+using CleanArchitecture.Blazored.Domain.Common;
+using CleanArchitecture.Blazored.Domain.Enums;
 
-namespace RapidBlazor.Domain.Entities;
+namespace CleanArchitecture.Blazored.Domain.Entities;
 
 public sealed class TodoItem : BaseAuditableEntity
 {
